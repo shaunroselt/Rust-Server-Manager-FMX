@@ -43,7 +43,15 @@ begin
 end;
 
 initialization
+begin
+  {$IFDEF VER370}
+  // Delphi 13 Auto Registers this
+  if TPlatformServices.Current.SupportsPlatformService(IFMXSpellCheckerService) then
+    TPlatformServices.Current.RemovePlatformService(IFMXSpellCheckerService);
+  {$ENDIF}
+
   TPlatformServices.Current.AddPlatformService(IFMXSpellCheckerService, TWinSpellCheckerService.Create);
+end;
 
 end.
 
