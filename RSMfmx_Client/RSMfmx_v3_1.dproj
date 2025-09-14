@@ -6,7 +6,7 @@
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
         <Platform Condition="'$(Platform)'==''">Win64</Platform>
-        <TargetedPlatforms>2</TargetedPlatforms>
+        <TargetedPlatforms>130</TargetedPlatforms>
         <AppType>Application</AppType>
         <MainSource>RSMfmx_v3_1.dpr</MainSource>
         <ProjectName Condition="'$(ProjectName)'==''">RSMfmx_v3_1</ProjectName>
@@ -1506,6 +1506,7 @@
             <Platforms>
                 <Platform value="Android">False</Platform>
                 <Platform value="Android64">False</Platform>
+                <Platform value="Linux64">True</Platform>
                 <Platform value="Win32">False</Platform>
                 <Platform value="Win64">True</Platform>
             </Platforms>
