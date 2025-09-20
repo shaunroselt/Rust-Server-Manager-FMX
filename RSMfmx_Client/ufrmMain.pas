@@ -971,11 +971,11 @@ begin
 
 {$IFDEF DEBUG}
   Self.Caption := 'RSMfmx v3.1 (DEBUG BUILD)';
-  lblAppVersionValue.Text := uGlobalConst.APP_VERSION + '(DEBUG)';
+  lblAppVersionValue.Text := GetAppVersion + ' (DEBUG)';
 {$ENDIF}
 {$IFDEF RELEASE}
   Self.Caption := 'RSMfmx v3.1';
-  lblAppVersionValue.Text := APP_VERSION;
+  lblAppVersionValue.Text := GetAppVersion;
 {$ENDIF}
   // Classes
   CreateClasses;

@@ -22,7 +22,27 @@ procedure HideAppOnTaskbar;
 
 procedure ShowAppOnTaskbar;
 
+function GetAppVersion: string;
+
 implementation
+
+function GetAppVersion: string;
+var
+  Size, Handle: DWORD;
+  Buffer: TBytes;
+  Info: PVSFixedFileInfo;
+  Len: UINT;
+begin
+  Result := '';
+  Size := GetFileVersionInfoSize(PChar(ParamStr(0)), Handle);
+  if Size > 0 then
+  begin
+    SetLength(Buffer, Size);
+    if GetFileVersionInfo(PChar(ParamStr(0)), Handle, Size, Buffer) then
+      if VerQueryValue(Buffer, '\', Pointer(Info), Len) then
+        Result := Format('%d.%d.%d.%d', [HiWord(Info.dwFileVersionMS), LoWord(Info.dwFileVersionMS), HiWord(Info.dwFileVersionLS), LoWord(Info.dwFileVersionLS)]);
+  end;
+end;
 
 procedure HideAppOnTaskbar;
 begin
