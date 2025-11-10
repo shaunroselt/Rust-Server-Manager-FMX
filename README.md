@@ -12,7 +12,7 @@ Join the [RSMfmx Discord Server](https://discord.gg/HraUQhtUcN)
 
 All dependencies are now free.
 
-* Internet Component Suite v9.5 + (ICS) (Free) from [overbyte.eu](https://wiki.overbyte.eu/wiki/index.php/ICS_Download)
+* Internet Component Suite v9.5 + (ICS) (Free) from [overbyte.eu](https://wiki.overbyte.eu/wiki/index.php/ICS_Download) or GetIt Package Manager
 * Delphi 13
 
 ## Libs Embedded
