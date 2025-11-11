@@ -1,5 +1,10 @@
 program RSMfmx_v3_1;
 
+{$IF CompilerVersion <> 37.0}
+  {$MESSAGE FATAL 'RSMfmx requires Delphi 13 (CompilerVersion = 37.0).'}
+{$IFEND}
+
+
 uses
   FastMM5 in 'Libs\FastMM5\FastMM5.pas',
   System.StartUpCopy,
