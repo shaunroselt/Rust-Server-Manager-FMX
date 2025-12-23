@@ -198,15 +198,13 @@
         <UWP_DelphiLogo44>Assets\AppIcons\RSM.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>Assets\AppIcons\RSM.png</UWP_DelphiLogo150>
         <VerInfo_MajorVer>2025</VerInfo_MajorVer>
-        <VerInfo_MinorVer>9</VerInfo_MinorVer>
-        <VerInfo_Release>20</VerInfo_Release>
-        <VerInfo_PreRelease>true</VerInfo_PreRelease>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=2025.9.20.3;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.rustservermanager.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;SpecialBuild=</VerInfo_Keys>
-        <VerInfo_Build>3</VerInfo_Build>
+        <VerInfo_MinorVer>12</VerInfo_MinorVer>
+        <VerInfo_Release>23</VerInfo_Release>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=2025.12.23.6;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.rustservermanager.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Build>6</VerInfo_Build>
         <DCC_Define>HORSE_VCL;$(DCC_Define)</DCC_Define>
         <DCC_PreferredToolArchitecture>x64</DCC_PreferredToolArchitecture>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Special>true</VerInfo_Special>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -438,7 +436,6 @@
                     <Source Name="MainSource">RSMfmx_v3_1.dpr</Source>
                 </Source>
                 <Excluded_Packages>
-                    <Excluded_Packages Name="dclfrControlsLibrary37.bpl">File dclfrControlsLibrary37.bpl not found</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k370.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp370.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>

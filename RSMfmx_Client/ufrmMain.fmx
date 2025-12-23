@@ -212,7 +212,7 @@ object frmMain: TfrmMain
         Size.Width = 710.000000000000000000
         Size.Height = 479.000000000000000000
         Size.PlatformDefault = False
-        TabIndex = 1
+        TabIndex = 0
         TabOrder = 0
         TabPosition = PlatformDefault
         Sizes = (
@@ -236,7 +236,7 @@ object frmMain: TfrmMain
           CustomIcon = <
             item
             end>
-          IsSelected = False
+          IsSelected = True
           Size.Width = 101.000000000000000000
           Size.Height = 24.000000000000000000
           Size.PlatformDefault = False
@@ -1058,7 +1058,7 @@ object frmMain: TfrmMain
           CustomIcon = <
             item
             end>
-          IsSelected = True
+          IsSelected = False
           Size.Width = 92.000000000000000000
           Size.Height = 24.000000000000000000
           Size.PlatformDefault = False
