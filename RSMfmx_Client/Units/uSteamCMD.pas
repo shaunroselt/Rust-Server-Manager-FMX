@@ -69,7 +69,9 @@ begin
   StartupInfo.cb := SizeOf(StartupInfo);
 
   var startStr := steamcmd_file;
-  startStr := startStr + Format(' +force_install_dir "%s"', [InstallDir]);
+  var servInstallDir := InstallDir + '\/'; // SteamCMD update broke trailing path ends. Force it.
+                                           // Thanks to https://github.com/AdriaanBoshoff/Rust-Server-Manager-FMX/issues/15
+  startStr := startStr + Format(' +force_install_dir "%s"', [servInstallDir]);
   startStr := startStr + Format(' +login %s', ['anonymous']);
   startStr := startStr + Format(' +app_update %d', [AppID]);
 
@@ -79,7 +81,7 @@ begin
   if TDirectory.Exists(steamAppsDir) then
     TDirectory.Delete(steamAppsDir, True);
 
-  if not beta.Trim.IsEmpty then
+  if not Beta.Trim.IsEmpty then
     startStr := startStr + ' -beta ' + Beta;
 
   if VerifyFiles then
